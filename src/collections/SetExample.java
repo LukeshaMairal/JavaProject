@@ -1,5 +1,6 @@
 package collections;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.TreeSet;
 
@@ -12,13 +13,15 @@ public class SetExample {
 		HashSet<String> set1 = new HashSet<String>();
 		
 		set1.add("Jake");
-		set1.add("Lily");
+		set1.add("Lily");	
+		set1.add("Naina");	
 		set1.add("Naina");
-		set1.add("Naina");
+		
+		
 		
 		System.out.println("The set is " + set1);
 		
-		// sorted set
+		//sorted set
 		TreeSet<String> set2 = new TreeSet<String>();
 		
 		set2.add("Zen");
@@ -28,9 +31,11 @@ public class SetExample {
 		System.out.println(set2);
 
 	
-		// convert set to list
+		//convert set to list
 		ArrayList<String> list1 = new ArrayList<String>(set1);
 		System.out.println(list1);
+		Collections.sort(list1);
+		System.out.println("After sorting the list " + list1);
 
 	}
 
